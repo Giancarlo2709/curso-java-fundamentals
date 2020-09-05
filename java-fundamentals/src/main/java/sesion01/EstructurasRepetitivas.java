@@ -53,5 +53,21 @@ public class EstructurasRepetitivas {
             System.out.println(c);
         }
 
+        // ForEach
+
+        String[] nombres = new String[3]; // 5 elementos
+        // for(TipoDeDato nombreVariable : coleccion) {
+        //Bloque de sentencias
+        // }
+        nombres[0] = "Giancarlo";
+        nombres[1] = "Elvis";
+        nombres[2] = "Yarlequé";
+
+        System.out.println(" ********** ForEach **********");
+
+        for (String miNombre : nombres) {
+            System.out.println(miNombre);
+        }
+
     }
 }
