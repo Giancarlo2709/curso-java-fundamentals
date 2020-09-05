@@ -69,5 +69,24 @@ public class EstructurasRepetitivas {
             System.out.println(miNombre);
         }
 
+
+        System.out.println(" ********* Break con for *********");
+        for(int y = 1; y <= 5; y++) {
+            System.out.println("Iteracion " + y);
+            if ( y == 3) {
+                break;
+            }
+        }
+
+        System.out.println(" ********* Break con while *********");
+        int e = 1;
+        while ( e < 6) {
+            System.out.println("Iteracion " + e);
+            if (e == 4) {
+                break;
+            }
+            e++;
+        }
+
     }
 }
