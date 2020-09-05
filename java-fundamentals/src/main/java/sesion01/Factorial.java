@@ -1,5 +1,6 @@
 package sesion01;
 
+import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -23,6 +24,8 @@ public class Factorial {
             inicializacion = inicializacion + 1; // 2
         }
 
+        System.out.println("El factorial de " + numero + " es: " + factorial);
+
         /*  inicializacion   factorial
             1                1 * 1 = 1
             2                1 * 2 = 2
@@ -30,6 +33,31 @@ public class Factorial {
             4
          */
 
-        System.out.println("El factorial de " + numero + " es: " + factorial);
+        long factorial2 = 1;
+        for (int a = 1; a <= numero; a++) {
+            factorial2 = factorial2 * a;
+        }
+
+        System.out.println("****** Factorial con for ******");
+        System.out.println("El factorial de " + numero + " es: " + factorial2);
+
+        // ForEach
+
+        String[] nombres = new String[3]; // 5 elementos
+        // for(TipoDeDato nombreVariable : coleccion) {
+            //Bloque de sentencias
+        // }
+        nombres[0] = "Giancarlo";
+        nombres[1] = "Elvis";
+        nombres[2] = "Yarlequé";
+
+        System.out.println(" ********** ForEach **********");
+
+        for (String miNombre : nombres) {
+            System.out.println(miNombre);
+        }
+
+
+
     }
 }

@@ -40,10 +40,18 @@ public class EstructurasRepetitivas {
         int a = 1;
         do {
             System.out.println(a);
-            a = a + 1;
+            a = a + 1; // a++;
         } while (a <= numeros);
 
+        System.out.println("****** FOR ******");
 
+        /* for (inicializacion; condicion; actualizacion){
+            // bloque de sentencias
+        }*/
+
+        for (int c = 1; c <= numeros ; c++) {
+            System.out.println(c);
+        }
 
     }
 }
