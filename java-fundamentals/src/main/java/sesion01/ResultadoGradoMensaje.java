@@ -33,22 +33,20 @@ public class ResultadoGradoMensaje {
 
         String mensaje = "";
 
-        char grado2 = grado.charAt(0);// A
-
-        switch (grado2) {
-            case 'A' :
+        switch (grado.toUpperCase()) {
+            case "A" :
                 mensaje = "¡Excelente trabajo!, su puntaje es más de 90";
                 break;
-            case 'B':
+            case "B":
                 mensaje = "¡Gran Trabajo!, su puntaje es menor a 90 y mayor a 80";
                 break;
-            case 'C':
+            case "C":
                 mensaje = "¡Buen Trabajo!, su puntaje es menor a 80 y mayor a 70";
                 break;
-            case 'D':
+            case "D":
                 mensaje ="¡Necesitas esforzarte un poco más!, su puntaje es menor a 70";
                 break;
-            case 'E':
+            case "E":
                 mensaje = "¡No Puede ser!, su puntaje es menor a 60";
                 break;
             default:
