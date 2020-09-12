@@ -8,8 +8,8 @@ persona que gane más de S/ 25,000 y tenga un score de crédito de 700 o mejor. 
  */
 public class VerificacionCreditoInstantaneo {
 
-    private static double salarioRequerido = 25000;
-    private static int scoreCrediticioRequerido = 700;
+    public static double salarioRequerido = 25000;
+    public static int scoreCrediticioRequerido = 700;
 
     private static Scanner scanner = new Scanner(System.in);
 
