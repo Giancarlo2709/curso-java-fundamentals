@@ -6,6 +6,8 @@ public class Usuario {
     private String apellidos;
     private int edad;
 
+    private EjecutaUsuario ejecutaUsuario;
+
     public Usuario() {
 
     }
