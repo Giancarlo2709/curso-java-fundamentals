@@ -35,7 +35,35 @@ public class Mes {
     }
 
     public static int obtenerMes(String mes) {
-        return 0;
+        switch(mes.toUpperCase()) {
+            case "ENERO":
+                return 1;
+            case "FEBRERO":
+                return 2;
+            case "MARZO":
+                return 3;
+            case "ABRIL":
+                return 4;
+            case "MAYO":
+                return 5;
+            case "JUNIO":
+                return 6;
+            case "JULIO":
+                return 7;
+            case "AGOSTO":
+                return 8;
+            case "SETIEMBRE":
+                return 9;
+            case "OCTUBRE":
+                return 10;
+            case "NOVIEMBRE":
+                return 11;
+            case "DICIEMBRE":
+                return 12;
+            default:
+                return -1;
+
+        }
     }
 
 }
