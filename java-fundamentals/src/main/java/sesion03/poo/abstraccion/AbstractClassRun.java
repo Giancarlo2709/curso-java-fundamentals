@@ -1,5 +1,7 @@
 package sesion03.poo.abstraccion;
 
+import java.util.Random;
+
 public class AbstractClassRun {
 
     public static void main(String[] args) {
@@ -16,6 +18,9 @@ public class AbstractClassRun {
         figura = new Triangulo("Triangulo", 4, 3);
         figura.dibujar();
         figura.calcularArea();
+
+        Random random = new Random();
+        System.out.println(random.nextInt(16) + 1);
 
     }
 }
