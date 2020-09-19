@@ -3,11 +3,7 @@ package sesion03.poo;
 public class TestHerencia {
 
     public static void main(String[] args) {
-        Empleado empleado = new Empleado();
-
-        System.out.println(empleado.nombre);
-        System.out.println(empleado.edad);
-        System.out.println(empleado.getGenero());
+        Empleado empleado = new Empleado("Giancarlo", "123", "Programador");
 
         Rectangulo rectangulo = new Rectangulo();
         rectangulo.setAncho(4);
@@ -21,5 +17,9 @@ public class TestHerencia {
 
         System.out.println("Perimetro Cuadrado: " + cuadrado.calcularPerimetro());
         cuadrado.imprimir();
+
+        System.out.println(empleado);
+
+
     }
 }
