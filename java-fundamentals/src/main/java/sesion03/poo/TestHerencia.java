@@ -1,5 +1,7 @@
 package sesion03.poo;
 
+import java.util.Random;
+
 public class TestHerencia {
 
     public static void main(String[] args) {
@@ -19,6 +21,18 @@ public class TestHerencia {
         cuadrado.imprimir();
 
         System.out.println(empleado);
+
+        Random random = new Random();
+        System.out.println(random.nextInt(16) + 1);
+
+        Perro cachorro = new Perro("Coco");
+
+        Gato michi = new Gato("Michifu");
+
+        cachorro.gemido();
+
+        michi.gemido();
+
 
 
     }
