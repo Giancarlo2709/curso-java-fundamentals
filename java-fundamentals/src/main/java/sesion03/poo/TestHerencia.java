@@ -33,6 +33,10 @@ public class TestHerencia {
 
         michi.gemido();
 
+        Madre madre = new Madre("Angela");
+
+        System.out.println(madre);
+
 
 
     }
