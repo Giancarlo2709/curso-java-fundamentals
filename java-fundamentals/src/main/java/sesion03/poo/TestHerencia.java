@@ -1,5 +1,8 @@
 package sesion03.poo;
 
+import sesion03.poo.polimorfismo.Gato;
+import sesion03.poo.polimorfismo.Perro;
+
 import java.util.Random;
 
 public class TestHerencia {
@@ -29,15 +32,15 @@ public class TestHerencia {
 
         Gato michi = new Gato("Michifu");
 
-        cachorro.gemido();
+        //cachorro.gemido();
 
-        michi.gemido();
+        //michi.gemido();
 
         Madre madre = new Madre("Angela");
 
         System.out.println(madre);
 
 
-
     }
+
 }

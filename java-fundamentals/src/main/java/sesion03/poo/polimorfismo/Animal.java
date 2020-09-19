@@ -1,4 +1,4 @@
-package sesion03.poo;
+package sesion03.poo.polimorfismo;
 
 public class Animal {
 
