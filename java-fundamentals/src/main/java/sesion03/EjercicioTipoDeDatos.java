@@ -12,5 +12,8 @@ public class EjercicioTipoDeDatos {
         for (double miNumero : numerosDecimales) {
             System.out.println(miNumero);
         }
+
+        System.out.println("Minimo Valor Integer: " + Integer.MIN_VALUE);
+        System.out.println("Maximo Valor Integer: " + Integer.MAX_VALUE);
     }
 }
