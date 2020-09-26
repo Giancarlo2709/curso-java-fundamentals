@@ -7,11 +7,13 @@ public class Persona {
     private String nombres;
     private String apellidos;
     private String dni;
+    private int edad;
 
-    public Persona(String nombres, String apellidos, String dni) {
+    public Persona(String nombres, String apellidos, String dni, int edad) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.dni = dni;
+        this.edad = edad;
     }
 
     public String getNombres() {
@@ -36,6 +38,14 @@ public class Persona {
 
     public void setDni(String dni) {
         this.dni = dni;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     @Override
