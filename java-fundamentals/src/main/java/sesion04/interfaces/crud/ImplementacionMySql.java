@@ -9,7 +9,7 @@ public class ImplementacionMySql implements AccesoDatos {
 
     @Override
     public void listar() {
-        System.out.println("Listar desde MySql");
+        System.out.println("Listar desde MySql: " + MAX_REGISTRO);
     }
 
     @Override
