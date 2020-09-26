@@ -10,7 +10,7 @@ public class QueueExample {
     }
 
     public static void queueDemo() {
-        Queue frutas3 = new LinkedList();
+        Queue<String> frutas3 = new LinkedList();
         frutas3.add("manzana");
         frutas3.add("limon");
         frutas3.add("platano");
@@ -36,5 +36,8 @@ public class QueueExample {
          */
         System.out.println("peek: " + frutas3.peek());
         System.out.println();
+
+        System.out.println("********** ");
+        frutas3.forEach(x -> System.out.println(x));
     }
 }
