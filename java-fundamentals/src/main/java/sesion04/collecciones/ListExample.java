@@ -1,6 +1,7 @@
 package sesion04.collecciones;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListExample {
@@ -25,5 +26,11 @@ public class ListExample {
         System.out.println(frutas2.size());
         System.out.println(frutas2);
         System.out.println();
+
+        System.out.println("***** Iterator ***** ");
+        Iterator iterator = frutas2.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }

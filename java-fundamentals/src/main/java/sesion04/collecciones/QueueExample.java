@@ -17,7 +17,6 @@ public class QueueExample {
         frutas3.add("naranja");
         frutas3.add("limon");
 
-
         System.out.println(frutas3.size());
         System.out.println(frutas3);
 
