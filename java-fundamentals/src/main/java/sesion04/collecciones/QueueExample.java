@@ -24,14 +24,14 @@ public class QueueExample {
         /*
          * Recupera y elimina el encabezado de esta cola
          */
-        frutas3.remove();
-        System.out.println(frutas3);
+        System.out.println("remove: " + frutas3.remove());
+        System.out.println("frutas: " + frutas3);
 
         /*
          * Este método se utiliza para ver el encabezado de la cola sin eliminarlo.
          * Devuelve Null si la cola está vacía.
          */
-        System.out.println(frutas3.peek());
+        System.out.println("peek: " + frutas3.peek());
         System.out.println();
     }
 }
