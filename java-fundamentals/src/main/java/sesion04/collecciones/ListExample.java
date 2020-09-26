@@ -3,6 +3,7 @@ package sesion04.collecciones;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 public class ListExample {
 
@@ -34,6 +35,14 @@ public class ListExample {
         }
 
         System.out.println(" ***** ForEach ***** ");
+        for(String fruta: frutas2) {
+            System.out.println(fruta);
+        }
 
+        System.out.println(" ***** Lambda Java 8 (Consumer) ***** ");
+        frutas2.forEach(x -> System.out.println(x));
+
+        System.out.println(" ***** Java 8 (Method Reference) ***** ");
+        frutas2.forEach(System.out::println);
     }
 }
