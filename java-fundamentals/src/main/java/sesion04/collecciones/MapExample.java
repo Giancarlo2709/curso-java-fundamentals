@@ -25,6 +25,8 @@ public class MapExample {
 
         System.out.println();
 
+
+        System.out.println("**** Recorriendo con Java Version Menor a 8 **************** ");
         // Recorriendo Mapas Java 7
         for (Map.Entry<String, Integer> entry : frutaCalorias.entrySet()) {
             System.out.println("Key: " + entry.getKey() + "; Valor: " + entry.getValue());
@@ -32,9 +34,10 @@ public class MapExample {
 
         System.out.println();
 
+        System.out.println("**** Recorriendo con Java a 8 **************** ");
         // Recorriendo Mapas con Java 8
         frutaCalorias.forEach(
-                (k, v) -> System.out.println("Fruta: " + k + "; Calorias: " + v)
+                (key,value) -> System.out.println("Fruta: " + key + "; Calorias: " + value)
         );
 
     }

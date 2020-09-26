@@ -44,5 +44,16 @@ public class ListExample {
 
         System.out.println(" ***** Java 8 (Method Reference) ***** ");
         frutas2.forEach(System.out::println);
+
+        System.out.println("Transformacion con Java 8");
+        frutas2.stream()
+                .map(x -> x.substring(2)) // Transformando mi coleccion de String a Integer
+                .forEach(x -> System.out.println("4 primeros Caracteres: " + x)); // Recorriendo e imprimiendo
+
+        System.out.println("Transformacion con Java 7");
+        for(String fruta: frutas2) {
+            int longitud = fruta.length();
+            System.out.println("Longitudes: " + longitud);
+        }
     }
 }
