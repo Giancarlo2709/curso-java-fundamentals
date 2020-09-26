@@ -50,5 +50,13 @@ public class SetPersonaExample {
             }
         });
 
+
+        try {
+            System.out.println("La division es: " + (5/0));
+        } catch(ArithmeticException ex) { // Exception
+            System.out.println("No se puede dividir por cero");
+        }
+
+
     }
 }
