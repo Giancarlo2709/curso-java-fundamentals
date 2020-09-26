@@ -32,5 +32,8 @@ public class ListExample {
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+
+        System.out.println(" ***** ForEach ***** ");
+
     }
 }

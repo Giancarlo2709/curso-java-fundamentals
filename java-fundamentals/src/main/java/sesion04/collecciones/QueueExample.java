@@ -20,6 +20,10 @@ public class QueueExample {
         System.out.println(frutas3.size());
         System.out.println(frutas3);
 
+        for (Object item: frutas3) {
+            System.out.println("Object: " + item);
+        }
+
         /*
          * Recupera y elimina el encabezado de esta cola
          */
