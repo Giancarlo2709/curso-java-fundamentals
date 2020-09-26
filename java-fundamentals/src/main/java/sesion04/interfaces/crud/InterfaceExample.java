@@ -4,11 +4,13 @@ public class InterfaceExample {
 
     public static void main(String[] args) {
 
-        System.out.println("************* MYSQL **************");
+        Logger logger = new ImplementacionMySql();
+        operacionesLogging(logger);
         AccesoDatos accesoDatos = new ImplementacionMySql();
         operacionesBasicasBaseDatos(accesoDatos);
 
-        System.out.println("************* ORACLE **************");
+        logger = new ImplementacionOracle();
+        operacionesLogging(logger);
         accesoDatos = new ImplementacionOracle();
         operacionesBasicasBaseDatos(accesoDatos);
 
@@ -22,5 +24,10 @@ public class InterfaceExample {
         accesoDatos.listar();
         accesoDatos.actualizar();
         accesoDatos.eliminar();
+    }
+
+    private static void operacionesLogging(Logger logger) {
+        logger.info();
+        logger.error();
     }
 }

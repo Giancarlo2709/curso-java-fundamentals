@@ -1,6 +1,6 @@
 package sesion04.interfaces.crud;
 
-public class ImplementacionOracle implements AccesoDatos {
+public class ImplementacionOracle implements AccesoDatos, Logger {
     @Override
     public void insertar() {
         System.out.println("Insertar desde Oracle");
@@ -19,5 +19,15 @@ public class ImplementacionOracle implements AccesoDatos {
     @Override
     public void eliminar() {
         System.out.println("Eliminar desde Oracle");
+    }
+
+    @Override
+    public void info() {
+        System.out.println("************* ORACLE INFO **************");
+    }
+
+    @Override
+    public void error() {
+        System.out.println("************* ORACLE ERROR **************");
     }
 }
