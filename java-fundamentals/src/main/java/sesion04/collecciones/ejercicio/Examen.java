@@ -16,8 +16,8 @@ public class Examen {
         Map<String, Double> examenRecuperacionMap = Calificacion.obtenerResultadosExamenRecuperacion();
 
         for (Map.Entry<String, Double> calificacion : examenRecuperacionMap.entrySet()) {
-            Double notaPrimerExamen= primerExamenMap.get(calificacion.getKey());
-            Double notaExamenRecuperacion = calificacion.getValue();
+            Double notaPrimerExamen= primerExamenMap.get(calificacion.getKey());// 15.4
+            Double notaExamenRecuperacion = calificacion.getValue(); // 16.4
 
             if (notaExamenRecuperacion > notaPrimerExamen) {
                 primerExamenMap.put(calificacion.getKey(), notaExamenRecuperacion);
