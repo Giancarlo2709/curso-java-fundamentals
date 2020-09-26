@@ -8,6 +8,12 @@ public class Persona {
     private String apellidos;
     private String dni;
 
+    public Persona(String nombres, String apellidos, String dni) {
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.dni = dni;
+    }
+
     public String getNombres() {
         return nombres;
     }
