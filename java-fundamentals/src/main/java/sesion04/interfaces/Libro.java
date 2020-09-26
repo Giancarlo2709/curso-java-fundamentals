@@ -10,7 +10,6 @@ public class Libro implements Producto {
     private int paginas;
     private String isbn;
 
-
     @Override
     public double getPrecio() {
         return precio;

@@ -10,9 +10,9 @@ public class Cliente {
         libro.setNombre("Mi Planta de Naranja Lima");
         libro.setColor("Verde");
 
-        //libro.setAutor("Jorge Ramirez");
-        //libro.setPaginas(345);
-        //libro.setIsbn("2332332323231131");
+        ((Libro) libro).setAutor("Jorge Ramirez");
+        ((Libro) libro).setPaginas(345);
+        ((Libro) libro).setIsbn("2332332323231131");
 
         System.out.println(libro.toString());
     }
