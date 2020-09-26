@@ -9,9 +9,9 @@ public class InterfaceExample {
         AccesoDatos accesoDatos = new ImplementacionMySql();
         operacionesBasicasBaseDatos(accesoDatos);
 
-        logger = new ImplementacionOracle();
-        operacionesLogging(logger);
+        /* logger = new ImplementacionOracle(); */
         accesoDatos = new ImplementacionOracle();
+        operacionesLogging((Logger) accesoDatos);
         operacionesBasicasBaseDatos(accesoDatos);
 
         System.out.println("************* MONGODB **************");
