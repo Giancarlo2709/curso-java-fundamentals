@@ -1,4 +1,7 @@
 package reforzamiento;
+
+import java.util.Scanner;
+
 /*
  *Escribir una calculadora, donde yo pueda solicitar al usuario, que seleccione un menu, donde
  * 0: salir
@@ -12,6 +15,8 @@ package reforzamiento;
  * el programa debe salir cuando elija la opcion 0
  */
 public class DoWhileExample {
+
+    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
