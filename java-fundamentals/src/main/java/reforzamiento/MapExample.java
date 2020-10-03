@@ -1,7 +1,6 @@
 package reforzamiento;
 
 import reforzamiento.poo.Futbolista;
-import reforzamiento.poo.Masajista;
 
 import java.time.LocalDate;
 import java.util.HashMap;
