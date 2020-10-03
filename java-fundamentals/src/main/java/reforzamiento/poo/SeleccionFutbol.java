@@ -1,6 +1,7 @@
 package reforzamiento.poo;
 
 import java.time.LocalDate;
+import static java.time.temporal.ChronoUnit.DAYS;
 
 public abstract class SeleccionFutbol {
 
@@ -53,6 +54,9 @@ public abstract class SeleccionFutbol {
     public abstract void viajar();
 
     public int calcularEdad() {
-        return 0;
+        LocalDate fechaActual = LocalDate.now();
+        long dias =  DAYS.between(fechaActual, fechaNacimiento);
+
+        return (int)dias/365;
     }
 }
