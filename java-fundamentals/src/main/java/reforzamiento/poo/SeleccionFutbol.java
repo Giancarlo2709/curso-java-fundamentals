@@ -1,4 +1,4 @@
 package reforzamiento.poo;
 
-public class SeleccionFutbol {
+public abstract class SeleccionFutbol {
 }
