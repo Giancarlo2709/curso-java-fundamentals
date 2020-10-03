@@ -5,7 +5,7 @@ import static java.time.temporal.ChronoUnit.DAYS;
 
 public abstract class SeleccionFutbol {
 
-    protected Integer id;
+    private Integer id;
     protected String nombre;
     protected String apellidos;
     protected LocalDate fechaNacimiento;
@@ -55,7 +55,7 @@ public abstract class SeleccionFutbol {
 
     public int calcularEdad() {
         LocalDate fechaActual = LocalDate.now();
-        long dias =  DAYS.between(fechaActual, fechaNacimiento);
+        long dias =  DAYS.between(fechaNacimiento, fechaActual);
 
         return (int)dias/365;
     }
