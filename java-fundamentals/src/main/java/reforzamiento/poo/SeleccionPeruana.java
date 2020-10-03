@@ -11,22 +11,16 @@ public class SeleccionPeruana {
     public static void main(String[] args) {
         SeleccionFutbol entrenador = new Entrenador(1, "Ricardo", "Garecca", LocalDate.of(1950, 9, 30), "FPF0001");
         SeleccionFutbol paoloGuerero = new Futbolista(2, "Paolo", "Guerrero", LocalDate.of(1995, 6, 21), "Delantero", 9);
-        Futbolista paoloGuerero2 = new Futbolista(2, "Paolo", "Guerrero", LocalDate.of(1995, 6, 21), "Delantero", 9);
+        SeleccionFutbol paoloGuerero2 = new Futbolista(2, "Jefferson", "Guerrero Farfán", LocalDate.of(1996, 5, 25), "Delantero", 10);
         SeleccionFutbol masajista1 = new Masajista(3, "José", "Hurtado", LocalDate.of(1978, 7, 31), 5);
-
-        System.out.println("****** Inicio Fechas de Nacimiento ******");
-        System.out.println("Fecha Nacimiento: " + entrenador.fechaNacimiento);
-        System.out.println("Fecha Nacimiento: " + paoloGuerero.fechaNacimiento);
-        System.out.println("Fecha Nacimiento: " + paoloGuerero2.fechaNacimiento);
-        System.out.println("Fecha Nacimiento: " + masajista1.fechaNacimiento);
-        System.out.println("****** Fin Fechas de Nacimiento ******");
 
         seleccionados.add(entrenador);
         seleccionados.add(paoloGuerero);
+        seleccionados.add(paoloGuerero2);
         seleccionados.add(masajista1);
 
-        seleccionados.forEach(seleccionado -> imprimirCaracteristicas(seleccionado));
-        //seleccionados.forEach(SeleccionPeruana::imprimirCaracteristicas);
+        // seleccionados.forEach(seleccionado -> imprimirCaracteristicas(seleccionado));
+        seleccionados.forEach(SeleccionPeruana::imprimirCaracteristicas);
     }
 
     private static void imprimirCaracteristicas(SeleccionFutbol seleccionFutbol) {
@@ -39,8 +33,10 @@ public class SeleccionPeruana {
         } else if(seleccionFutbol instanceof  Futbolista) {
             System.out.println("Soy un futbolista y mis datos son: ");
             imprimirDatosComunes(seleccionFutbol);
-            ((Futbolista) seleccionFutbol).jugarPartido();
-            ((Futbolista) seleccionFutbol).entrenar();
+            Futbolista futbolista = (Futbolista) seleccionFutbol;
+            futbolista.jugarPartido();
+            futbolista.entrenar();
+            System.out.println("Mi numero de camiseta es: " + futbolista.getNumeroCamiseta());
         } else if(seleccionFutbol instanceof  Masajista) {
             System.out.println("Soy un masajista y mis datos son: ");
             imprimirDatosComunes(seleccionFutbol);
@@ -50,7 +46,8 @@ public class SeleccionPeruana {
 
     private static void imprimirDatosComunes(SeleccionFutbol seleccionFutbol) {
         System.out.println("Id: " + seleccionFutbol.getId() +  " Nombre: " + seleccionFutbol.getNombre() + " Apellidos: "
-                + seleccionFutbol.getApellidos() + " Edad: " + seleccionFutbol.calcularEdad());
+                + seleccionFutbol.getApellidos() + " Fecha Nacimiento: " + seleccionFutbol.getFechaNacimiento()  +
+                " Edad: " + seleccionFutbol.calcularEdad());
         System.out.println("Concentración");
         seleccionFutbol.concentrarse();
         System.out.println("Viaje");

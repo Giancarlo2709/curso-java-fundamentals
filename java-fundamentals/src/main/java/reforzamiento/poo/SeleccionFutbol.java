@@ -5,7 +5,7 @@ import static java.time.temporal.ChronoUnit.DAYS;
 
 public abstract class SeleccionFutbol {
 
-    private Integer id;
+    protected Integer id;
     protected String nombre;
     protected String apellidos;
     protected LocalDate fechaNacimiento;
