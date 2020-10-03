@@ -10,11 +10,12 @@ public class UnCheckedException {
         String[] nombres = {"Giancarlo", "Elvis"};
 
         try {
-            System.out.println(nombres[1]);
-        } catch(ArrayIndexOutOfBoundsException exception) {
+            System.out.println(nombres[2]);
+        } catch(Exception exception) {
             System.out.println("Indice del arreglo incorrecto, verifique!");
         }
 
+        System.out.println("Finalizando nuestro codigo");
 
     }
 }
