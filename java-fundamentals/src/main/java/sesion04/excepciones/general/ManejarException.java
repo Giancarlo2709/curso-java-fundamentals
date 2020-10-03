@@ -10,7 +10,7 @@ public class ManejarException {
 
     public static void main(String[] args) {
 
-        //crearNuevoArchivo();
+        crearNuevoArchivo();
         // numerosManejarExcepciones();
         try {
             crearNuevoArchivoReintentar();

@@ -2,7 +2,7 @@ package sesion04.excepciones.tipos;
 
 public class CheckedException {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Matematicas matematicas = new Matematicas();
         primeraForma(matematicas);
         // segundaForma(matematicas);
@@ -13,11 +13,12 @@ public class CheckedException {
             double resultado = matematicas.dividir(5, 0);
             System.out.println("El resultado es: " + resultado);
         } catch (Exception e) {
-            System.out.println("No se puede dividir por cero");
+            //capturar excepcion e incluir tratamiento de la misma
+            System.out.println(e.getMessage());
         }
     }
 
     private static void segundaForma(Matematicas matematicas) throws Exception {
-        double resultado = matematicas.dividir(5, 2);
+        double resultado = matematicas.dividir(5, 0);
     }
 }
