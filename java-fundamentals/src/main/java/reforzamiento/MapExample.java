@@ -21,7 +21,7 @@ public class MapExample {
         }
 
         // A partir de Java 8
-        System.out.println("****************** COn java 8 ******************" );
+        System.out.println("****************** Con java 8 ******************" );
         mapasFutbolistas.forEach((key, value) -> {
             System.out.println("*******************************************");
             System.out.println("Hola soy el key: " + key);
