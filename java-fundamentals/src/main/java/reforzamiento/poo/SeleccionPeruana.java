@@ -17,5 +17,34 @@ public class SeleccionPeruana {
         seleccionados.add(paoloGuerero);
         seleccionados.add(masajista1);
 
+
+
+    }
+
+    private static void imprimirCaracteristicas(SeleccionFutbol seleccionFutbol) {
+        if (seleccionFutbol instanceof Entrenador) {
+            System.out.println("Soy un entrenador y mis datos son : ");
+            imprimirDatosComunes(seleccionFutbol);
+            ((Entrenador) seleccionFutbol).dirigirPartido();
+            ((Entrenador) seleccionFutbol).dirigirEntranamiento();
+        } else if(seleccionFutbol instanceof  Futbolista) {
+            System.out.println("Soy un futbolista y mis datos son: ");
+            imprimirDatosComunes(seleccionFutbol);
+            ((Futbolista) seleccionFutbol).jugarPartido();
+            ((Futbolista) seleccionFutbol).entrenar();
+        } else if(seleccionFutbol instanceof  Masajista) {
+            System.out.println("Soy un masajista y mis datos son: ");
+            imprimirDatosComunes(seleccionFutbol);
+            ((Masajista) seleccionFutbol).darMasaje();
+        }
+    }
+
+    private static void imprimirDatosComunes(SeleccionFutbol seleccionFutbol) {
+        System.out.println("Id: " + seleccionFutbol.getId() +  " Nombre: " + seleccionFutbol.getNombre() + " Apellidos: "
+                + seleccionFutbol.getApellidos() + " Edad: " + seleccionFutbol.calcularEdad());
+        System.out.println("Concentración");
+        seleccionFutbol.concentrarse();
+        System.out.println("Viaje");
+        seleccionFutbol.viajar();
     }
 }

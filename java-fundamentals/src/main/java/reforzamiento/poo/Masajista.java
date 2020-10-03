@@ -28,4 +28,8 @@ public class Masajista extends SeleccionFutbol {
     public void viajar() {
         System.out.println("Como soy masajista me envian en la clase B");
     }
+
+    public void darMasaje() {
+        System.out.println("He venido a darte un masaje");
+    }
 }
