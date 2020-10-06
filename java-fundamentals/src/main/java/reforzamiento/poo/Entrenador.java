@@ -4,19 +4,19 @@ import java.time.LocalDate;
 
 public class Entrenador extends SeleccionFutbol {
 
-    private String idFederación;
+    private String idFederacion;
 
-    public Entrenador(Integer id, String nombre, String apellidos, LocalDate fechaNacimiento, String idFederación) {
+    public Entrenador(Integer id, String nombre, String apellidos, LocalDate fechaNacimiento, String idFederacion) {
         super(id, nombre, apellidos, fechaNacimiento);
-        this.idFederación = idFederación;
+        this.idFederacion = idFederacion;
     }
 
-    public String getIdFederación() {
-        return idFederación;
+    public String getIdFederacion() {
+        return idFederacion;
     }
 
-    public void setIdFederación(String idFederación) {
-        this.idFederación = idFederación;
+    public void setIdFederacion(String idFederacion) {
+        this.idFederacion = idFederacion;
     }
 
     @Override
